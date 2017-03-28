@@ -1,0 +1,87 @@
+$base-font-size: 13.5px;
+$theme-color: darkgray;
+$theme-light-color: lightgray;
+$theme-dark-color: gray;
+$theme-link-color: mix($theme-light-color, blue, 50%);
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,500,600,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-size: $base-font-size;
+    height: 100vh;
+    width: 100vw;
+    border-left: 1em solid $theme-light-color;
+
+    main {
+        margin: 0 8em;
+        padding: 1em 0;
+
+        #name {
+            font-size: 2em;
+            border-bottom: 1px $theme-light-color solid;
+            margin-bottom: .5em;
+        }
+        & > section {
+            border-bottom: 1px $theme-light-color solid;
+            margin-bottom: 1em;
+            padding-bottom: 1em;
+
+            h2 {
+                font-weight: 700;
+                color: $theme-dark-color;
+            }
+            h3 {
+                font-weight: 600;
+                color: $theme-color;
+            }
+            li {
+                list-style: none;
+            }
+            dl {
+                dt {
+                }
+                dd {
+                    margin-left: 1em;
+                    &:before {
+                        content: ">";
+                        padding-right: .5em;
+                        color: $theme-dark-color;
+                        font-weight: 600;
+                    }
+                }
+            }
+            a {
+                color: $theme-link-color;
+                text-decoration: none;
+            }
+            table {
+                border-collapse: collapse;
+                td, th{
+                    padding: .5em 1em;
+                }
+                thead tr {
+                    border-bottom: $theme-color solid 1px;
+                    text-align: left;
+                }
+                tbody tr {
+                }
+            }
+
+            &#education .graduate {
+                color: $theme-color;
+            }
+        }
+    }
+}
