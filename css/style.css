@@ -59,6 +59,15 @@ body main > section dl dd:before {
   color: gray;
   font-weight: 600;
 }
+body main > section dl ul {
+  margin-left: 2em;
+}
+body main > section dl ul li:before {
+  content: "*";
+  padding-right: 0.5em;
+  color: gray;
+  font-weight: 600;
+}
 body main > section a {
   color: #6a6ae9;
   text-decoration: none;
