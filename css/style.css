@@ -86,4 +86,15 @@ body main > section#education .graduate {
   color: darkgray;
 }
 
+@media screen {
+  .only-print {
+    display: none;
+  }
+}
+@media print {
+  .no-print {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=css/style.css.map */
