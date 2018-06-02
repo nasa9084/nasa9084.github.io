@@ -2,55 +2,80 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 html {
-  height: 100%; }
+  height: 100%;
+}
 
 body {
   font-size: 13.5px;
   height: 100vh;
   width: 100vw;
-  border-left: 1em solid lightgray; }
-  body main {
-    margin: 0 8em;
-    padding: 1em 0; }
-    body main #name {
-      font-size: 2em;
-      border-bottom: 1px lightgray solid;
-      margin-bottom: .5em; }
-    body main > section {
-      border-bottom: 1px lightgray solid;
-      margin-bottom: 1em;
-      padding-bottom: 1em; }
-      body main > section h2 {
-        font-weight: 700;
-        color: gray; }
-      body main > section h3 {
-        font-weight: 600;
-        color: darkgray; }
-      body main > section li {
-        list-style: none; }
-      body main > section dl dd {
-        margin-left: 1em; }
-        body main > section dl dd:before {
-          content: ">";
-          padding-right: .5em;
-          color: gray;
-          font-weight: 600; }
-      body main > section a {
-        color: #6a6ae9;
-        text-decoration: none; }
-      body main > section table {
-        border-collapse: collapse; }
-        body main > section table td, body main > section table th {
-          padding: .5em 1em; }
-        body main > section table thead tr {
-          border-bottom: darkgray solid 1px;
-          text-align: left; }
-      body main > section#education .graduate {
-        color: darkgray; }
+  border-left: 1em solid lightgray;
+}
+body main {
+  margin: 0 8em;
+  padding: 1em 0;
+}
+body main #name {
+  font-size: 2em;
+  border-bottom: 1px lightgray solid;
+  margin-bottom: 0.5em;
+}
+body main > section {
+  border-bottom: 1px lightgray solid;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+body main > section h2 {
+  font-weight: 700;
+  color: gray;
+}
+body main > section h3 {
+  font-weight: 600;
+  color: darkgray;
+}
+body main > section ul ul {
+  padding-left: 1em;
+}
+body main > section ul ul li:before {
+  content: ">";
+  padding-right: 0.5em;
+  color: gray;
+  font-weight: 600;
+}
+body main > section li {
+  list-style: none;
+}
+body main > section dl dd {
+  margin-left: 1em;
+}
+body main > section dl dd:before {
+  content: ">";
+  padding-right: 0.5em;
+  color: gray;
+  font-weight: 600;
+}
+body main > section a {
+  color: #6a6ae9;
+  text-decoration: none;
+}
+body main > section table {
+  border-collapse: collapse;
+}
+body main > section table td, body main > section table th {
+  padding: 0.5em 1em;
+}
+body main > section table thead tr {
+  border-bottom: darkgray solid 1px;
+  text-align: left;
+}
+body main > section#education .graduate {
+  color: darkgray;
+}
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=css/style.css.map */

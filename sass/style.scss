@@ -46,6 +46,17 @@ body {
                 font-weight: 600;
                 color: $theme-color;
             }
+            ul ul {
+                padding-left: 1em;
+                li {
+                    &:before {
+                        content: ">";
+                        padding-right: .5em;
+                        color: $theme-dark-color;
+                        font-weight: 600;
+                    }
+                }
+            }
             li {
                 list-style: none;
             }
