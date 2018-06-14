@@ -20,7 +20,6 @@ html {
 
 body {
     font-size: $base-font-size;
-    height: 100vh;
     width: 100vw;
     border-left: 1em solid $theme-light-color;
 
@@ -46,6 +45,17 @@ body {
                 font-weight: 600;
                 color: $theme-color;
             }
+            ul ul {
+                padding-left: 1em;
+                li {
+                    &:before {
+                        content: ">";
+                        padding-right: .5em;
+                        color: $theme-dark-color;
+                        font-weight: 600;
+                    }
+                }
+            }
             li {
                 list-style: none;
             }
@@ -61,6 +71,15 @@ body {
                         font-weight: 600;
                     }
                 }
+                ul {
+                        margin-left: 2em;
+                        li:before {
+                            content: "*";
+                            padding-right: .5em;
+                            color: $theme-dark-color;
+                            font-weight: 600;
+                        }
+                    }
             }
             a {
                 color: $theme-link-color;
@@ -83,5 +102,17 @@ body {
                 color: $theme-color;
             }
         }
+    }
+}
+
+@media screen {
+    .only-print {
+        display: none;
+    }
+}
+
+@media print {
+    .no-print {
+        display: none;
     }
 }
