@@ -66,13 +66,13 @@
           <dt>[WIP] <a href="https://github.com/nasa9084/go-openapi">github.com/nasa9084/go-openapi</a>[<a href="https://github.com/nasa9084/go-openapi">source</a>]</dt>
           <dd>OpenAPI specification 3.0のGo言語向けパッケージ</dd>
           <dt>[WIP] <a href="https://github.com/kubernetes/kubernetes-docs-ja">github.com/kubernetes/kubernetes-docs-ja</a></dt>
-          <dd>Kubernetesのドキュメント翻訳プロジェクト</dd>
+          <dd>Kubernetesのドキュメント翻訳プロジェクト: 日本語チームオーナー</dd>
+          <dd><a href="https://kubernetes.io/ja/">k8s.io/ja</a></dd>
         </dl>
         <h2>Jobs</h2>
         <dl>
           <dt><a href="https://break-through.biz">BREAK THROUGH</a>: 2016/08 - 2017/03</dt>
           <dd>Engineer(アルバイト)</dd>
-
           <dd>Java/Strutsで10年ほど前に書かれた比較的大規模な給与計算系業務システムの保守・開発に学生アルバイトとして携わっていました。
             ソースコード・データベース構造ともにまともなドキュメント・コメントも無い状態で、挙動を一つ一つ調査しながらマスタデータの更新や新規機能要望への対応を行いました。
             主な課題はデータ構造や挙動の調査で、PostgreSQLに格納されたデータとソースコード、画面表示を照らし合わせて、入力したデータがどこで処理され、どこで保存され、出力されているのかを調べました。
@@ -91,6 +91,7 @@
           <dd>JenkinsやNexusなどを中心とした社内向けの基盤を管理していく上で発生する定常業務の自動化を行いました。非常に多くのユーザがいるために肥大化したJenkinsのノード管理や、リソースの管理などをGo言語やAnsibleなどを用いて自動化、作業量を削減しました。本来、社内のエンジニアの開発効率を改善するための部署であり、新しいシステムなどの検証などを業務とする部署でしたが、Jenkins等の管理に多くの時間を割く必要があり、本来の新システム導入などの業務ができなくなっていたため、自動化を推進することにより本来の業務ができるように尽力しています。また、Kubernetesをはじめとしたコンテナ基盤を適宜活用することにより、安定性に不安のあった基盤の安定性を向上させるための作業をしています。</dd>
           <dd>社内のシステムにおいてアクセス流量を制御するためのQuota as a Serviceを開発しています。社内で用いられているログ・メトリクス集約ツールは非常に多くのアクセスがあり、ユーザサービスごとにある程度のQuotaを設けることで流量を制御したいという欲求がありました。個々のシステムごとにQuota/RateLimitパッケージを導入してもいいのですが、複数のサービスで必要となることは明らかだったため、社内/チーム全体で使用可能なQuota as a Serviceを開発することとなりました。Quota as a Serviceの開発に当たり、要件定義・インターフェースやアルゴリズムなどの検討・設計・バックエンドサーバの開発を担当し、現在も開発を継続しています。APIはgRPCとRESTで提供し、それぞれprotocol buffersとOpenAPI SpecからAPIサーバを自動生成したほか、Goコード内で定義したinterfaceからmockを自動生成したなど、開発時やその後の段階で変更が必要となった場合に手間がかからないよう、コアロジックの開発に専念できるよう考慮しながら開発を進めています。一部のテストコード(HTTP Handlerなどのテスト)もOpenAPI Specから自動生成しているため、APIに変更があってもコードの手動変更が最小限ですむようになっています。またインフラとして、Central Dogmaと社内プライベートクラウドで提供されているRedis Cluster、認証管理サーバとして社内のLDAPサーバを使用したり、設定ファイルの変更UIとしてGitHub EnterprizeのPull Requestをそのまま利用したりすることにより、DB等の管理コストを大幅に削減し、運用にかかる手間を最小限に抑えています。</dd>
           <dd>内製で開発を行っている全社向けサーバメトリクス・ログ監視ツールのエージェントについてデプロイフローの改善を行っています。</dd>
+          <dd><a href="https://github.com/line/line-bot-sdk-go">LINE Messaging APIのGo言語用SDK</a>の開発に一部参画しています。LINE Thingsに関連するAPIサポートを実装しました。</dd>
         </dl>
       </section>
       <section id="events">
